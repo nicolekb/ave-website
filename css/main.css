@@ -1,0 +1,149 @@
+/*general and main-body*/
+html { box-sizing: border-box; }
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, h7 { margin: 0; padding: 0; }
+
+li, a {
+  list-style-type: none;
+  text-decoration: none;
+  color: #222;
+}
+
+a:hover { color: #00C8C7; }
+/*end of general and main-body*/
+
+/*header*/
+/*navigation-one*/
+.first-nav li {
+  display: block;
+  padding: 2%;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+/*end navigation-one*/
+
+/*navigation-two*/
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+.second-nav li {
+  display: inline-flex;
+  padding: 2%;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+/*end of navigation-two*/
+/*end of header*/
+
+/*content and images*/
+/*half-width-content*/
+.half-width-content { display: flex; }
+
+.half-width-content > div {
+	width: 48%;
+	margin: 2%;
+}
+
+.half-width-content > div:first-child {
+	margin-right: 2%;
+}
+/*end of half-width-content*/
+
+/*full-width-content*/
+.full-width-content {
+  max-width: 98%;
+  margin: 2%;
+}
+/*end of full-width-content*/
+
+.main-container p {
+  position: absolute;
+  z-index: 100;
+  margin: 3%;
+  color: #bbb;
+  font-size: 12px;
+}
+
+.main-container p span {
+  text-decoration: line-through;
+  margin-right: 5%;
+}
+/*end of content and images*/
+
+/*footer*/
+footer {
+  background-color: #f8f8f8;
+  padding: 2%;
+}
+
+/*start of 4-column-footer*/
+.footer-four-column {
+  display:flex;
+  flex-wrap:wrap;
+  flex-direction:row;
+  justify-content:flex-start;
+  align-items:stretch;
+}
+
+.col-1 {
+  width: 21%;
+  margin: 2%;
+}
+
+ul.item {
+  padding: 0;
+  margin: 0;
+}
+
+ul.item li {
+  font-size: 10px;
+  padding: 3% 0;
+}
+/*end of 4-column-footer*/
+
+/*start of sm*/
+h7 {
+  font-size: 18px;
+  color: #fff;
+}
+
+.media { display: flex; }
+
+.awards {
+  background-color: #333;
+  min-width: 50%;
+  margin: 1%;
+}
+
+.sm {
+  background-color: #00C8C7;
+  min-width: 50%;
+  margin: 1%;
+}
+
+.sm li {
+  display: flex;
+}
+
+.sm img {
+  max-width: 10%;
+}
+/*end of sm*/
+
+/*start of copyright*/
+h8 {
+  color: #dedede;
+  font-size: 10px;
+  text-align: center;
+}
+.copyright { background-color: #333;}
+/*end of copyright*/
+
+/*end of footer*/
