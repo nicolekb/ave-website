@@ -18,6 +18,49 @@ a:hover { color: #00C8C7; }
 /*end of general and main-body*/
 
 /*header*/
+/*banner*/
+@media(min-width: 960px) {
+  h1 {
+    font-size: 300px;
+    text-align: center;
+    color: #575153;
+    z-index: 100;
+    position: relative;;
+    top: 100px;
+    letter-spacing: 100px;
+  }
+
+  .banner button {
+    z-index: 100;
+    position: relative;
+    background-color: #F8F8F8;
+    color: 7C7C7C;
+    border: 2px solid #7C7C7C;
+    font-size: 20px;
+    top: 100px;
+    float: left;
+    left: 58%;
+    padding: 1%;
+    clear: both;
+  }
+
+  .banner button:hover {
+    text-decoration: underline;
+    color: #00C8C7;
+    font-size: 25px;
+  }
+
+  .banner {
+    display: block;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-color: #f8f8f8;
+    min-height: 640px;
+  }
+}
+/*end of banner*/
+
 /*navigation-one*/
 .first-nav li {
   display: block;
@@ -75,12 +118,18 @@ nav ul {
   text-decoration: line-through;
   margin-right: 5%;
 }
+
+@media (min-width: 960px) {
+  .first-item-list, .second-item-list {
+    display: flex;
+    max-width: 50%;
+  }
+
 /*end of content and images*/
 
 /*footer*/
 footer {
   background-color: #f8f8f8;
-  padding: 2%;
 }
 
 /*start of 4-column-footer*/
@@ -145,5 +194,21 @@ h8 {
 }
 .copyright { background-color: #333;}
 /*end of copyright*/
+
+@media (min-width: 960px) {
+  .footer-container {
+    width: 960px;
+    margin: 0 auto;
+  }
+
+  h6 { font-size: 18px; }
+
+  ul.item li { padding: 8% 0; }
+
+  h8 {
+    font-size: 20px;
+  }
+
+}
 
 /*end of footer*/
