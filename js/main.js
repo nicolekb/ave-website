@@ -1,15 +1,16 @@
+// $( ".cross" ).hide();
+// $( ".first-nav" ).hide();
 
-$('.hamburger').click(function(e)
-{
+$( ".hamburger" ).click(function() {
+	$( ".first-nav" ).slideToggle( "slow", function() {
+		$( ".hamburger" ).hide();
+		$( ".cross" ).show();
+	});
+});
 
-	$('nav').toggle();
-	e.preventDefault();
-})
-
-// $(document).ready(function()
-// {
-// 	$(window).on('resize', function()
-// 	{
-
-// 	});
-// });
+$( ".cross" ).click(function() {
+	$( ".first-nav" ).slideToggle( "slow", function() {
+		$( ".cross" ).hide();
+		$( ".hamburger" ).show();
+		});
+});
